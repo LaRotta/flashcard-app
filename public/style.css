@@ -1,0 +1,38 @@
+#cardStyling {
+    width: 1000px;
+    height: 400px;
+    background-color: blanchedalmond;
+    border-style: solid;
+    border-color: cornflowerblue;
+    margin: auto;
+}
+
+#hyperLinks:link {
+    padding: 50px;
+    text-decoration: none;
+    text-align: end;
+    float: right;
+}
+
+#header {
+    padding-top: 25px; 
+    padding-right: 25px; 
+    padding-left: 45px; 
+    padding-bottom: 25px; 
+}
+
+#logo-container {
+    width: 1350px;
+    height: 150px;
+    background-color: gainsboro;
+}
+
+body {
+    margin-top: -21px;
+    margin-left: 0px;
+}
+
+#logo {
+    font-family: 
+}
+
