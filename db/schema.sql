@@ -4,20 +4,20 @@ CREATE DATABASE indexGuruDB;
 
 USE indexGuruDB;
 
-CREATE TABLE questions (
+CREATE TABLE card (
 	id INT NOT NULL AUTO_INCREMENT,
 	question TEXT NOT NULL,
-	topic VARCHAR(255) NOT NULL,
+	answer TEXT NOT NULL,
 	PRIMARY KEY (id)
 );
 
-CREATE TABLE answers (
-	id INT NOT NULL AUTO_INCREMENT,
-    question_id INT NOT NULL,
-	answer TEXT NOT NULL,
-	PRIMARY KEY (id),
-	FOREIGN KEY (question_id) REFERENCES questions(id)
-);
+-- CREATE TABLE answers (
+-- 	id INT NOT NULL AUTO_INCREMENT,
+--     question_id INT NOT NULL,
+-- 	answer TEXT NOT NULL,
+-- 	PRIMARY KEY (id),
+-- 	FOREIGN KEY (question_id) REFERENCES questions(id)
+-- );
 
 
 
