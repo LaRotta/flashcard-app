@@ -1,3 +1,11 @@
+a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    
+}
+
 .hide {
     display: none;
 }
@@ -24,6 +32,7 @@
     padding-left: 45px; 
     padding-bottom: 25px; 
 }
+
 
 #logo-container {
     width: 1350px;
