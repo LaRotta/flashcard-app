@@ -1,85 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Practice</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../public/style.css"> -->
-
-	<style>
-
-		#logo-container {
-    width: 1350px;
-    height: 150px;
-    background-color: gainsboro;
-}
-		body {
-    margin-top: -21px;
-    margin-left: 0px;
-}
-a {
-    text-decoration: none;
-    font-size: 12px;
-    padding: 10px 24px;
-    border-radius: 8px;
-    
-}
-	</style>
-</head>
-
-
-<body>
-
-    
-    <div id="logo-container">
-        <h1 id="logo">IndexGuru</h1>
-        <p id="slogan">A simple node express Index-Card App</p>
-    </div>
-
-    <ul>
-		<button><a href="/">Home</a></button>
-		<button><a href="/add.html">Add your index card</a></button>
-		<button><a href="/results" target="_blank">Index Card API Endpoint</a></button>
-		<button><a href="/flashcard" target="_blank">Practice with Flashcards</a></button>
-	</ul>
-    
-<!-- this is the front of the card -->
+	<% include partials/header %>
 
     <div id="header">
         <h3><span>Front</span></h3>
 		
-		<% for (var i=0; i<card.length; i++) { %>			
-			<p><span><%= card[i].question %></span></p>			
-		<% } %>
-	</div>
-
-    <div id="cardStyling">
-        <span></span>
-    </div>
-
-    <div> 
-        <a href="#" id="hyperLinks">flip me</a>
-    </div>
-
-    <!-- this is the back of the card -->
-
-    <div id="header", class="card-back">
-		<h3><span>Back</span></h3>
-
 		<% for (var i=0; i<card.length; i++) { %>
-			<p><span class="hide"><%= card[i].answer %></span></p>
+			<div>
+				<span class="name"><%= card[i].question; %></span>	
+				<span class="hide"><%= card[i].answer %></span>	
+			</div>		
 		<% } %>
-
 	</div>
-    
-        <div id="cardStyling">
-            <span></span>
-        </div>
-    
-        <div> 
-            <a href="#" id="hyperLinks">NEXT</a>
-        </div>
 
-</body>
-</html>
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+	</script>
+
+	<script>
+
+		$(".name").on("click", function(){
+			$(this).siblings().eq(0).removeClass("hide");
+		});
+		
+	</script>
+
+	<% include partials/footer %>

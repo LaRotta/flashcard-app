@@ -31,7 +31,7 @@ var connection = mysql.createConnection({
 });
 
 
-app.post('/create', function(req, res){
+app.post("/create", function(req, res){
 	connection.query(
 		"INSERT INTO card (question, answer) VALUES (?, ?)",
 		[req.body.question, req.body.answer],
@@ -61,11 +61,22 @@ app.get('/flashcard', function(req, res){
 		}
 	  );
   });
+  
+  app.get("/", function(req, res){
+	res.render('index');
+  });
 
+  app.get("/add", function(req, res){
+	res.render('add');
+  });
+
+//   app.get("/flashcard", function(req, res){
+// 	res.render('add');
+//   });
 
 
 app.listen(3000, function(){
-	console.log("Shhhh, I'm listening on 3000 ovah hea");
+	console.log("Shhhh, I'm listenin' on 3000 ovah heah, dahling");
 });
 
 
