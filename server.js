@@ -70,10 +70,6 @@ app.get('/flashcard', function(req, res){
 	res.render('add');
   });
 
-//   app.get("/flashcard", function(req, res){
-// 	res.render('add');
-//   });
-
 
 app.listen(3000, function(){
 	console.log("Shhhh, I'm listenin' on 3000 ovah heah, dahling");

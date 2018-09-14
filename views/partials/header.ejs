@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Practice</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 </head>
 <body>
 
     
     <div id="logo-container">
-        <h1 id="logo">IndexGuru</h1>
-        <p id="slogan">A simple node express Index-Card App</p>
+        <h1 class="text" id="logo">IndexGuru</h1>
+        <p  class="text" id="slogan">A simple node express Index-Card App</p>
     </div>
 
     <ul>
-        <button><a href="/">Home</a></button>
-        <button><a href="/add">Add your index card</a></button>
-		<button><a href="/results" target="_blank">View all</a></button>
-		<button><a href="/flashcard" target="_blank">Practice with Flashcards</a></button>
+        <button class="btn"><i class="fa fa-home"></i><a href="/">Home</a></button>
+        <button class="btn"><i class="fa fa-plus"></i><a href="/add">Add your index card</a></button>
+		<button class="btn"><i class="fa fa-eye"></i><a href="/results" target="_blank">View all</a></button>
+		<button class="btn"><i class="fa fa-graduation-cap"></i><a href="/flashcard" target="_blank">Practice</a></button>
     </ul>
 

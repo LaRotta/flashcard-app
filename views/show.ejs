@@ -1,11 +1,20 @@
 	<% include partials/header %>
 
-    <div id="header">
-        <h3><span>Front</span></h3>
+    <div id="index-card">
+
+		<!-- image that I want as background for the question and answers to go over it. -->
+		<!-- <img src="index-card.jpg" alt="indexCard"> -->
+
+		<h3><span>Front</span></h3> 
+		<h3 id="back-header"><span>Back</span></h3>
+
 		
 		<% for (var i=0; i<card.length; i++) { %>
 			<div>
-				<span class="name"><%= card[i].question; %></span>	
+				<span class="name"><%= card[i].question %></span>
+			<!-- </div>
+			
+			<div> -->
 				<span class="hide"><%= card[i].answer %></span>	
 			</div>		
 		<% } %>
@@ -22,7 +31,7 @@
 		$(".name").on("click", function(){
 			$(this).siblings().eq(0).removeClass("hide");
 		});
-		
+
 	</script>
 
 	<% include partials/footer %>

@@ -1,3 +1,60 @@
+#slogan {
+font-size: 20px;
+}
+
+.btn {
+    color: #4359ac;
+    font-size: 80px;
+    border-radius: 12px;
+    border: 4px solid #4359ac;
+    width: 275px;
+    margin-right: 47px;
+    box-shadow: 0 8px 16px 0#4359ac, 0 6px 20px 0 #c3cdf0;
+    letter-spacing: .5px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.btn:active {
+    transform: translateY(4px);
+  }
+
+  .create-btn {
+    color: #4359ac;
+    font-size: 25px;
+    border-radius: 25px;
+    border: 4px solid #4359ac;
+    width: 185px;
+    box-shadow: 0 8px 16px 0#4359ac, 0 6px 20px 0 #c3cdf0;
+    letter-spacing: .5px;
+}
+
+  .create-btn:active {
+    transform: translateY(4px);
+  }
+
+.text {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-text {
+    font-family: 'Poppins', sans-serif;
+    color: #4359ac;
+    font-size: 50px;
+}
+
+.form-container {
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text-box {
+    height: 46px;
+    width: 235px;
+}
+
 .footer {
     position:fixed;bottom:0;
     text-align: center;
@@ -16,6 +73,30 @@ a {
 
 .hide {
     display: none;
+    color: red;   
+}
+
+#index-card {
+    width: 100%;
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    padding-right: 350px;
+    text-align: center;
+}
+
+h3 {
+    color: #4359ac;
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 165px;
+}
+
+#back-header {
+    float:right;
+    padding-right: 500px;
 }
 
 #cardStyling {
@@ -45,7 +126,14 @@ a {
 #logo-container {
     width: 1350px;
     height: 150px;
-    background-color: gainsboro;
+    background-color: #4359ac;
+    ;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -53,6 +141,4 @@ body {
     margin-left: 0px;
 }
 
-/* #logo {
-    font-family: 
-} */
+

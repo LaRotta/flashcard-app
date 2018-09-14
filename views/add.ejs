@@ -1,15 +1,17 @@
 
 <% include partials/header %>
 
-<div class="container">		
-	<form method="POST" action="/create">
-		<label>Question</label>
-		<input type="text" name="question">
+<div class="form-container">		
+	<form id="form" method="POST" action="/create">
+		<label class="form-text">Question</label>
+		<textarea class="text-box" name="question" placeholder="Write your question.." required></textarea>
 
-		<label>Answer</label>
-		<input type="text" name="answer">
+		<label class="form-text">Answer</label>
+		<textarea class="text-box" name="answer" placeholder="Write your answer.." required></textarea>
 
-		<button>Create</button>
+		<br> <br> <br>
+
+		<button class="create-btn"><i class="fa fa-pencil"></i>Create</button>
 	</form>
 </div>
 
